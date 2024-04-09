@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igoy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cadf3548f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="navbar">
+        
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="closeMenuBtn" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="openMenuBtn" onclick="openmenu()"></i>
+        </nav>
+        <a href="#header"><img src="Assets/logo.png" class="logo"></a>
+        <div class="header-text">
+            <p>Programmer</p>
+            <h1>Hi, I'm <span>Christian</span><br> from Philippines</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<!--ABOUT-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Assets/profile2.png" class="profile">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "subtitle">About Me</h1>
+                <p>
+                    My name is Christian Alynn C. Igoy, a recent graduate with a Bachelor of Science in Information Technology from the University of Cebu - Banilad. 
+                    Eager to dive into the workforce, I bring a passion for leveraging social media, office tech, and advanced computer skills to drive impact. 
+                    Proficient in computer networking, hardware, HTML/CSS/JavaScript, and database management. With excellent communication, team spirit, and a knack for customer service, 
+                    I'm ready to adapt and thrive in any challenge!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023 IT Support Specialist Intern</span><br>Install common software and hardware in workstations, such as routers, computers, printers, data, phones, and security cameras. In addition, I have troubleshooted computer and network problems while providing remote and phone-based IT help desk support. I've also assisted with setting up business email clients, updated workstations and performed preventative maintenance, and managed the inventory of IT gear and software licenses</li>
+                        <li><span>2019 Customer Service Intern</span><br>Helped clients with order placement and billing problems. In addition, I've inputted client data into the business database and given them information about the products and services</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023 University of Cebu Banilad</span><br>Bachelor of Science in Information Technology</li>
+                        <li><span>2017-2019 University of Cebu Lapu-Lapu & Mandaue</span><br>Senior High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class = "subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                    Elevate your online presence with our expert web development service. 
+                    We build captivating websites and dynamic applications tailored just for you. Let's bring your vision to life!
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>
+                    Turn your app ideas into reality with our expert development service. From concept to launch, we craft seamless and intuitive mobile applications tailored to your needs. 
+                    Let's build something amazing together!
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <h2>UI/UX Design</h2>
+                <p>
+                    Designing digital experiences that delight users! Our UI/UX development service focuses on creating intuitive interfaces and engaging interactions for your website or app. 
+                    Let's make your brand shine with user-centric design!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "subtitle">My Works</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="Assets/mobile.png">
+                <div class="layer">
+                    <h3>Aquatech Mobile Application</h3>
+                    <p>
+                        Experience effortless billing with Aquatech's Meter Scanner. Say goodbye to manual readings, hello automation!
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Assets/mobilechat.png">
+                <div class="layer">
+                    <h3>Chat System</h3>
+                    <p>
+                        Connect instantly, chat seamlessly: Your gateway to effortless communication magic!
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Assets/website.png">
+                <div class="layer">
+                    <h3>Aquatech Website Application</h3>
+                    <p>
+                        Unlock secure data storage on Aquatech's exclusive mobile meter scanner website for admins.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> igoychristianalynn@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +63 966 188 1614</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/christianigoy2701/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
+                </div>
+                <a href="Assets/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contactright">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>    
+    </div>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
